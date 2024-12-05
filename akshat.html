@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(8, 8, 1);
+            height: 300px;
+            width: 300px;
+            transition-property: border-radius,border,transform;
+            transition-duration: 6s;
+            color: white;
+            text-align: center;
+            transition-timing-function: ease-in-out;
+            margin: 10px;
+        }
+        .container:hover{
+            border-radius: 50%;
+            border: 10px double rgb(14, 251, 251);
+            transform: rotate(7200deg);
+        }
+        .container2{
+            background-color: rgb(8, 8, 1);
+            height: 300px;
+            width: 300px;
+            transition-property: border-radius,border,transform;
+            transition-duration: 6s;
+            color: rgb(23, 6, 6);
+            text-align: center;
+            transition-timing-function: ease-in-out;
+            margin: 10px;
+            animation-name: xy;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+    
+        
+        @keyframes xy{
+            0%{
+                background-color: aqua;
+            }
+            25%{
+                background-color: antiquewhite;
+                border-radius: 25%;
+            }
+            50%{
+                background-color: rgba(126, 82, 145, 0.888);
+            }
+            75%{
+                background-color: lightgreen;
+                 border-radius: 75%;
+            }
+            100%{
+                background-color: lightgrey;
+            }
+            
+        }
+        .container2:hover{
+            border-radius: 50%;
+            border: 10px double rgb(4, 30, 30);
+            transform: rotate(7200deg);
+        }
+        .container3{
+            height: 300px;
+            width: 300px;
+            background-color: lightgreen;
+            margin: 10px;
+            text-align: center;
+        }
+        @media (max-width:499px) {
+            .container3{background-color: lightsalmon;}
+        }
+        @media (min-width:500px) and (max-width:800px) {
+            .container3{background-color: lightslategray;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">Akshat</div>
+    <div class="container2">Ansh</div>
+    <div class="container3">Khushi</div>
+</body>
+</html>
